@@ -4,7 +4,7 @@
 
 # terminal emulator
 ctrl + Return
-	urxvtc -e tmux
+	st
 
 # program launcher
 super + @space
@@ -49,6 +49,11 @@ super + {t,shift + t,s,f}
 # set the node flags
 super + ctrl + {x,y,z}
 	bspc node -g {locked,sticky,private}
+
+caps_lock
+	amixer sset Master 1%+
+caps_lock + alt
+	amixer sset master 1%-
 
 #
 # focus/swap
